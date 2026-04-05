@@ -76,7 +76,7 @@
     loader.classList.remove('hidden');
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/quote');
+        const response = await fetch('http://joyful-motivation-production.up.railway.app/quote');
         const data = await response.json();
 
         quoteEl.innerText = data.quote;
